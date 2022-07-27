@@ -12,3 +12,12 @@ spec:
   rules:
   - host: {{ .Values.Name }}.{{ .Values.Domain }}
   ## YOUR CONFIGURATION HERE ##
+    http:
+      paths: 
+      - backend:
+          service: 
+            name: {{ .Values.Name }}
+            port: 
+              number: {{ .Values.Port }}
+        path: /
+        pathType: Prefix

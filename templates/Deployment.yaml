@@ -19,3 +19,17 @@ spec:
     spec:
       containers:
       ## YOUR CONFIGURATION HERE #
+
+      - image: nginx:latest
+        name: nginx
+        ports:
+        - containerPort: {{ .Values.Port }}
+          name: http
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 200m
+            memory: 256Mi
+          requests:
+            cpu: 100m
+            memory: 128Mi

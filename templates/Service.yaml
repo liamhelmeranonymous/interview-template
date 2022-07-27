@@ -9,3 +9,8 @@ metadata:
   name: {{ .Values.Name }}
 spec:
   ## YOUR CONFIGURATION HERE ##
+  ports:
+  - name: http
+    port: {{ .Values.Port }}
+  selector:
+    app: {{ .Values.Name }}

@@ -7,3 +7,4 @@ metadata:
     app.kubernetes.io/name: {{ .Values.Name }}
     app.kubernetes.io/version: {{ .Chart.Version }}
 data:
+  ## YOUR CONFIGURATION HERE ##
