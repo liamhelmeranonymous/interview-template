@@ -1,4 +1,4 @@
-# interview-argocd-repo
+# DevOps Helm Interview
 
 To use this repo, check it out to your local machine. This exercise requires git, yq, bash and helm 3.
 
